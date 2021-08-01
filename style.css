@@ -1,0 +1,73 @@
+/* body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+
+} */
+
+body {
+    background: url("world.jpg") no-repeat;
+    background-size: 100%;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.flashcards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 550px;
+    margin-left: 32%;
+
+
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+
+.card {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front {
+    background: linear-gradient( yellow, lawngreen);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: linear-gradient(purple, yellow);
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.container {
+    perspective: 1000px;
+}
