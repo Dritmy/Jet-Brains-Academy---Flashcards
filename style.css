@@ -1,12 +1,3 @@
-/* body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: gray;
-
-} */
-
 body {
     background: url("world.jpg") no-repeat;
     background-size: 100%;
@@ -16,7 +7,6 @@ body {
 
 h1 {
     text-align: center;
-
 }
 
 .flashcards {
@@ -25,8 +15,6 @@ h1 {
     height: 550px;
     width: 550px;
     margin-left: 32%;
-
-
     align-items: center;
     justify-content: space-between;
     opacity: 0.9;
